@@ -33,8 +33,10 @@ ALLOWED_HOSTS = [
     'https://syahir136-8000.theianext-0-labs-prod-misc-tools-us-east-0.'
     'proxy.cognitiveclass.ai']
 CSRF_TRUSTED_ORIGINS = [
-    'https://syahir136-8000.theianext-0-labs-prod-misc-tools-us-east-0.'
-    'proxy.cognitiveclass.ai']
+    'https://*.proxy.cognitiveclass.ai',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000'
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
